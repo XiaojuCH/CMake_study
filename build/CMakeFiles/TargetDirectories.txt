@@ -1,0 +1,3 @@
+/home/xiaoju/Cmake_study/build/CMakeFiles/app.dir
+/home/xiaoju/Cmake_study/build/CMakeFiles/edit_cache.dir
+/home/xiaoju/Cmake_study/build/CMakeFiles/rebuild_cache.dir
