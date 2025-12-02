@@ -6,7 +6,7 @@ A repository to record my CMake study
 首先在项目目录创建一个CMakeLists.txt文件，注意这个文件名不要写错->   
     然后修改该文件内容   
 完成后可新建一个bulid文件夹，以方便将管理新生成的项目文件->   
-    进入build文件夹，终端输入```cmake ..```(这里的".."指的是CMakeLists.txt文件所在的目录，假设我们的build是根目录下的文件夹: 
+    进入build文件夹，终端输入`cmake ..`(这里的`".."`指的是CMakeLists.txt文件所在的目录，假设我们的build是根目录下的文件夹: 
 
     ```
     project/
@@ -16,11 +16,10 @@ A repository to record my CMake study
     |—— build
         |—— (我们所在的文件夹目录)  
     ```
-
-    那么很显然CMakeLists.txt的相对位置就是..)   
+那么很显然CMakeLists.txt的相对位置就是..)   
 输入该指令后会在build文件夹内生成若干文件->   
-    我们再输入```make```指令即可得到所需的可执行文件->   
-        之后再终端```./可执行文件名```即可运行
+    我们再输入`make`指令即可得到所需的可执行文件->   
+        之后再终端`./可执行文件名`即可运行
 
 ## CMakeLists.txt用法
 
