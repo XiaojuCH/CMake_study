@@ -1,4 +1,4 @@
-CMakeFiles/app.dir/main.cpp.o: /home/xiaoju/Cmake_study/main.cpp \
+CMakeFiles/app.dir/mult.cpp.o: /home/xiaoju/Cmake_study/mult.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

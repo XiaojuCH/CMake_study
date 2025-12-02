@@ -129,6 +129,54 @@ app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+add.o: add.cpp.o
+.PHONY : add.o
+
+# target to build an object file
+add.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/add.cpp.o
+.PHONY : add.cpp.o
+
+add.i: add.cpp.i
+.PHONY : add.i
+
+# target to preprocess a source file
+add.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/add.cpp.i
+.PHONY : add.cpp.i
+
+add.s: add.cpp.s
+.PHONY : add.s
+
+# target to generate assembly for a file
+add.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/add.cpp.s
+.PHONY : add.cpp.s
+
+div.o: div.cpp.o
+.PHONY : div.o
+
+# target to build an object file
+div.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/div.cpp.o
+.PHONY : div.cpp.o
+
+div.i: div.cpp.i
+.PHONY : div.i
+
+# target to preprocess a source file
+div.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/div.cpp.i
+.PHONY : div.cpp.i
+
+div.s: div.cpp.s
+.PHONY : div.s
+
+# target to generate assembly for a file
+div.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/div.cpp.s
+.PHONY : div.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -153,6 +201,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mult.o: mult.cpp.o
+.PHONY : mult.o
+
+# target to build an object file
+mult.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/mult.cpp.o
+.PHONY : mult.cpp.o
+
+mult.i: mult.cpp.i
+.PHONY : mult.i
+
+# target to preprocess a source file
+mult.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/mult.cpp.i
+.PHONY : mult.cpp.i
+
+mult.s: mult.cpp.s
+.PHONY : mult.s
+
+# target to generate assembly for a file
+mult.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/mult.cpp.s
+.PHONY : mult.cpp.s
+
+sub.o: sub.cpp.o
+.PHONY : sub.o
+
+# target to build an object file
+sub.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/sub.cpp.o
+.PHONY : sub.cpp.o
+
+sub.i: sub.cpp.i
+.PHONY : sub.i
+
+# target to preprocess a source file
+sub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/sub.cpp.i
+.PHONY : sub.cpp.i
+
+sub.s: sub.cpp.s
+.PHONY : sub.s
+
+# target to generate assembly for a file
+sub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/sub.cpp.s
+.PHONY : sub.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
+	@echo "... add.o"
+	@echo "... add.i"
+	@echo "... add.s"
+	@echo "... div.o"
+	@echo "... div.i"
+	@echo "... div.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mult.o"
+	@echo "... mult.i"
+	@echo "... mult.s"
+	@echo "... sub.o"
+	@echo "... sub.i"
+	@echo "... sub.s"
 .PHONY : help
 
 

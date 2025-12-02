@@ -1,10 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
+#include "head.h"
 
 int main()
 {
-    int a = 13;
-    int b = 14;
-
-    printf("13 + 14 的结果是：%d\n",a+b);
+    int a = 20;
+    int b = 12;
+    printf("a = %d, b = %d\n", a, b);
+    printf("a + b = %d\n", add(a, b));
+    printf("a - b = %d\n", subtract(a, b));
+    printf("a * b = %d\n", multiply(a, b));
+    printf("a / b = %f\n", divide(a, b));
     return 0;
 }
+
