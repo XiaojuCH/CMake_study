@@ -29,11 +29,3 @@ project(test) —— 指定该项目的名称为test
 
 add_executable(app add.cpp div.cpp mult.cpp main.cpp sub.cpp) —— 定义工程会生成的可执行文件名字为app，然后这个app是由后面的源文件构成的
 
-## 文件介绍
-
-### V2是制作静/动态链接库
-
-### V3是在程序中调用静态库
-
-### V4是在程序中调用静态库
-
