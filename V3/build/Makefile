@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/cmake_study/CMake_study/V2
+CMAKE_SOURCE_DIR = /root/cmake_study/CMake_study/V3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/cmake_study/CMake_study/V2/build
+CMAKE_BINARY_DIR = /root/cmake_study/CMake_study/V3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cmake_study/CMake_study/V2/build/CMakeFiles /root/cmake_study/CMake_study/V2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cmake_study/CMake_study/V3/build/CMakeFiles /root/cmake_study/CMake_study/V3/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/cmake_study/CMake_study/V2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/cmake_study/CMake_study/V3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,113 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named calc
+# Target rules for targets named app
 
 # Build rule for target.
-calc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calc
-.PHONY : calc
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-calc/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/build
-.PHONY : calc/fast
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
-src/add.o: src/add.cpp.o
-.PHONY : src/add.o
-
-# target to build an object file
-src/add.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/add.cpp.o
-.PHONY : src/add.cpp.o
-
-src/add.i: src/add.cpp.i
-.PHONY : src/add.i
-
-# target to preprocess a source file
-src/add.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/add.cpp.i
-.PHONY : src/add.cpp.i
-
-src/add.s: src/add.cpp.s
-.PHONY : src/add.s
-
-# target to generate assembly for a file
-src/add.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/add.cpp.s
-.PHONY : src/add.cpp.s
-
-src/div.o: src/div.cpp.o
-.PHONY : src/div.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-src/div.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/div.cpp.o
-.PHONY : src/div.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-src/div.i: src/div.cpp.i
-.PHONY : src/div.i
-
-# target to preprocess a source file
-src/div.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/div.cpp.i
-.PHONY : src/div.cpp.i
-
-src/div.s: src/div.cpp.s
-.PHONY : src/div.s
-
-# target to generate assembly for a file
-src/div.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/div.cpp.s
-.PHONY : src/div.cpp.s
-
-src/mult.o: src/mult.cpp.o
-.PHONY : src/mult.o
-
-# target to build an object file
-src/mult.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/mult.cpp.o
-.PHONY : src/mult.cpp.o
-
-src/mult.i: src/mult.cpp.i
-.PHONY : src/mult.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-src/mult.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/mult.cpp.i
-.PHONY : src/mult.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-src/mult.s: src/mult.cpp.s
-.PHONY : src/mult.s
-
-# target to generate assembly for a file
-src/mult.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/mult.cpp.s
-.PHONY : src/mult.cpp.s
-
-src/sub.o: src/sub.cpp.o
-.PHONY : src/sub.o
-
-# target to build an object file
-src/sub.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/sub.cpp.o
-.PHONY : src/sub.cpp.o
-
-src/sub.i: src/sub.cpp.i
-.PHONY : src/sub.i
-
-# target to preprocess a source file
-src/sub.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/sub.cpp.i
-.PHONY : src/sub.cpp.i
-
-src/sub.s: src/sub.cpp.s
-.PHONY : src/sub.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-src/sub.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/sub.cpp.s
-.PHONY : src/sub.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -233,19 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... calc"
-	@echo "... src/add.o"
-	@echo "... src/add.i"
-	@echo "... src/add.s"
-	@echo "... src/div.o"
-	@echo "... src/div.i"
-	@echo "... src/div.s"
-	@echo "... src/mult.o"
-	@echo "... src/mult.i"
-	@echo "... src/mult.s"
-	@echo "... src/sub.o"
-	@echo "... src/sub.i"
-	@echo "... src/sub.s"
+	@echo "... app"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

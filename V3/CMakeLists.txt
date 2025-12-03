@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 3.15)
 project(test1)
 
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
-set(EXECUTABLE_OUTPUT_PATH /home/xiaoju/Cmake_study/aa/bb/cc)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 include_directories(${PROJECT_SOURCE_DIR}/include) # 设置头文件路径
 
-# add_executable(app ${SRC})
-set(LIBRARY_OUTPUT_PATH ~/cmake_study/CMake_study/V2/abcdefg) # 设置动/静态库保存目录
-add_library(calc SHARED ${SRC})
+link_libraries(calc) # 这里是加库文件
+
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib1) 
+# 这里的是去指定一个我们自定义的库文件(因为上面的link_libraries
+#指令只能加载系统的库)
+
+add_executable(app ${SRC})

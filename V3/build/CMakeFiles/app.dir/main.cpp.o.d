@@ -1,6 +1,5 @@
-CMakeFiles/calc.dir/src/mult.cpp.o: \
- /root/cmake_study/CMake_study/V2/src/mult.cpp /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+CMakeFiles/app.dir/main.cpp.o: /root/cmake_study/CMake_study/V3/main.cpp \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -24,4 +23,4 @@ CMakeFiles/calc.dir/src/mult.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /root/cmake_study/CMake_study/V2/include/head.h
+ /root/cmake_study/CMake_study/V3/include/head.h
